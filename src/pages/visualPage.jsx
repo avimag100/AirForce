@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
-import Circle from '../components/Circle';
+import HIS from '../components/HIS';
+import ADI from '../components/ADI.jsx';
 
 const VisualPage = () => {
     return (
-        <div className='flex'>
-          <Circle />
-        </div>
-      );
+        <>
+            <div className='flex justify-evenly'>
+                <HIS />
+                <ADI />
+            </div>
+        </>
+    );
 };
 
 export default VisualPage;
