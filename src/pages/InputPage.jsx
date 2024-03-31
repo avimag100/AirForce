@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Input from '../components/Input';
 import { IoSend } from "react-icons/io5";
-import Circle from '../components/Circle';
 
 const InputPage = () => {
   const [inputValues, setInputValues] = useState({
