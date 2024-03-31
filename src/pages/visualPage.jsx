@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import Circle from '../components/Circle';
 
-const visualPage = () => {
+const VisualPage = () => {
     return (
         <div className='flex'>
+          <Circle />
           <Circle />
         </div>
       );
 };
 
-export default visualPage;
+export default VisualPage;
 
