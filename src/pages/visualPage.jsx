@@ -5,7 +5,6 @@ const VisualPage = () => {
     return (
         <div className='flex'>
           <Circle />
-          <Circle />
         </div>
       );
 };
