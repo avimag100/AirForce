@@ -29,7 +29,6 @@ const InputPage = () => {
         <Input type="ADI" maxValue={100} onChange={(value) => handleInputChange('ADI', value)} />
 
         <button className='self-end' onClick={handleSubmint}><IoSend /></button>
-        <Circle/>
       </div>
     </div>
   );
