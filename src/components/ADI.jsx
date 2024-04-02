@@ -7,8 +7,8 @@ const ADI = ({value}) => {
 
     const numberStyle = "absolute w-6 h-6 bg-white border border-black flex justify-center items-center rounded-full";
     return (
-            <div className="relative w-80 h-80 rounded-full border-2 border-black flex justify-center items-center overflow-hidden" style={{ backgroundColor: 'green' }}>
-                <div style={{ height: `${value}%`, backgroundColor: 'blue', position: 'absolute', top: 0, left: 0, right: 0 }} />
+            <div className="relative w-80 h-80 rounded-full border-2 border-black flex justify-center items-center overflow-hidden" style={{ backgroundColor: '#0E9F6E' }}>
+                <div style={{ height: `${value}%`, backgroundColor: '#3F83F8', position: 'absolute', top: 0, left: 0, right: 0 }} />
             </div>
     );
 };
