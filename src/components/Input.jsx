@@ -4,7 +4,15 @@ const Input = ({ type, maxValue, onChange }) => {
     const [value, setValue] = useState('');
 
     const handleChange = (event) => {
-        const newValue = event.target.value;
+        let newValue = event.target.value;
+
+        if (newValue > maxValue) {
+            newValue = maxValue;
+        }
+        if (newValue < 0) {
+            newValue = 0
+        }
+
         setValue(newValue);
         onChange(newValue);
     };

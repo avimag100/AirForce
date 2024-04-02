@@ -1,11 +1,12 @@
 import React from 'react'
-import InputPage from './pages/InputPage'
 import AppRoutes from './routes/AppRoutes'
+import CreateContext from './context/CreateContext'
+
 const App = () => {
   return (
-    <div>
+    <CreateContext>
       <AppRoutes />
-    </div>
+    </CreateContext>
   )
 }
 export default App

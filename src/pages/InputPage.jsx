@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import Input from '../components/Input';
 import { IoSend } from "react-icons/io5";
+import { MyContext } from '../context/CreateContext';
+import { useNavigate } from 'react-router-dom';
 
 const InputPage = () => {
+  const { myValue, setMyValue } = useContext(MyContext)
+  const nav = useNavigate()
   const [inputValues, setInputValues] = useState({
     Altitude: '',
     HIS: '',
@@ -17,7 +21,10 @@ const InputPage = () => {
   };
 
   const handleSubmint = () => {
+    setMyValue(inputValues)
     console.log('Input values:', inputValues);
+    nav("/visualPage")
+
   };
 
   return (
