@@ -1,9 +1,10 @@
 import React from 'react';
 
 const ADI = ({value}) => {
-    // Calculate the percentage of the value (assuming value ranges from 0 to 100)
-    const percentage = Math.min(100, Math.max(0, value)); // Ensure percentage is between 0 and 100
-    const fillHeight = (percentage / 100) * 80 + 'px'; // 80 is the height of the container
+    // make sure it is between 0 and 100
+    const percentage = Math.min(100, Math.max(0, value)); 
+    // 80 is the height of the container
+    const fillHeight = (percentage / 100) * 80 + 'px'; 
 
     const numberStyle = "absolute w-6 h-6 bg-white border border-black flex justify-center items-center rounded-full";
     return (

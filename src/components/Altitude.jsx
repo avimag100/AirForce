@@ -12,7 +12,7 @@ const Altitude = ({ value }) => {
         <div className="text-center">0</div>
       </div>
       <div className="absolute flex hover-full transform -translate-y-1/2 items-center" style={{ height: `${value}%` }}>
-        <CgArrowLongRight className="w-24" size={50} style={{ transform: 'scaleX(2)' }} />
+        <CgArrowLongRight className="w-24 text-blue-600" size={50} style={{ transform: 'scaleX(2)' }} />
       </div>
     </div>
   );
