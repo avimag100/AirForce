@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { CgArrowLongUpC } from "react-icons/cg";
 
 const HIS = ({ Value }) => {
+  // how the number looks like in the circle
   const numberStyle = "absolute w-6 h-6 bg-white border border-black flex justify-center items-center rounded-full";
 
   return (

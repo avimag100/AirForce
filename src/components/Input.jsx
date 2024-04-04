@@ -8,6 +8,7 @@ const Input = ({ type, maxValue, onChange, value }) => {
     const handleChange = (event) => {
         let newValue = event.target.value;
 
+        // to make sure that client cant put value above or below
         if (newValue > maxValue) {
             newValue = maxValue;
         }
@@ -26,7 +27,6 @@ const Input = ({ type, maxValue, onChange, value }) => {
                 type="number"
                 min={0}
                 max={maxValue}
-                // defaultValue={value}
                 value={topValue}
                 onChange={handleChange}
                 className="w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:border-blue-500 focus:ring focus:ring-blue-500"

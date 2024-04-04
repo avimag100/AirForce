@@ -2,7 +2,10 @@ import React from "react";
 import { CgArrowLongRight } from "react-icons/cg";
 
 const Altitude = ({ value }) => {
+
+  // make sure the value is between 0 and 3000
   value = value / 3000 * 100;
+
   return (
     <div className="flex items-end h-72 relative">
       <div className="w-24 h-72 bg-gray-300 flex flex-col justify-between rounded-lg">

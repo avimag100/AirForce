@@ -12,8 +12,8 @@ const CreateContext = ({ children }) => {
   useEffect(() => {
     const fun = async () => {
       try {
-        const data  = await axios.get(GET_DATA_URL);
-        const { ADI , Altitude , HIS } = data.data;
+        const data = await axios.get(GET_DATA_URL);
+        const { ADI, Altitude, HIS } = data.data;
         setMyValue({
           ADI,
           Altitude,
@@ -23,8 +23,7 @@ const CreateContext = ({ children }) => {
         console.log(err);
       }
     }
-    window.addEventListener('reload',fun());
-    // fun();
+    window.addEventListener('reload', fun());
   }, [])
 
   return (

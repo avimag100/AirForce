@@ -10,9 +10,8 @@ const AppRoutes = () => {
         <div>
             <BrowserRouter>
                 <Routes>
-                <Route path="/" element={<Navigate to="/visualPage" />} />
-                    <Route path='/visualPage' element={<VisualPage />}/>
-                        {/* <Route path='/visualPage/InputPage' element={<InputPage />} /> */}
+                    <Route path="/" element={<Navigate to="/visualPage" />} />
+                    <Route path='/visualPage' element={<VisualPage />} />
                     <Route path='/TextPage' element={<TextPage />} />
                 </Routes>
             </BrowserRouter>
